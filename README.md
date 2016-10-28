@@ -2,6 +2,8 @@
 
 ### harvest_check.py
 
+Run `pip install -r requirements.txt`, then `python harvest_check.py`
+
 Checks all days in the previous week in harvest, and sends an email if you haven't logged enough hours on any day.
 
 To use, you need to setup a [mailgun](http://www.mailgun.com/) account, and create a `config.py` file with these fields:
