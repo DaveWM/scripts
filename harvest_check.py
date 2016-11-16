@@ -23,6 +23,7 @@ for year_day in days_to_check:
         warning_days.append(year_day)
 
 if warning_days:
+    print('sending email')
     mailer.send_message(
         'harvest@{0}'.format(mailgun_domain),
         [email],
