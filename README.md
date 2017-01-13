@@ -18,3 +18,9 @@ To use, you need to setup a [mailgun](http://www.mailgun.com/) account, and crea
 | mailgun_domain | The domain for mailgun |
 | harvest_user | Username/email for harvest |
 | harvest_password | Password for harvest |
+
+### update-lodash-imports.clj
+
+Updates all the `.ts*` files in the given directory to import each individual lodash function separately.
+
+Open the file in a repl, and run `fix-lodash`, passing in the absolute path to the directory where your code is.
