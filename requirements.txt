@@ -1,2 +1,2 @@
-mailgun2==1.1.0
 python-harvest-redux==2.0.1
+slacker==0.9.60
