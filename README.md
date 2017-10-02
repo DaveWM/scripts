@@ -1,23 +1,17 @@
 ## Scripts
 
-### harvest_check.py
+### harvest_check.hy
 
-Run `pip install -r requirements.txt`, then `python harvest_check.py`
+Install Hy, run `pip install -r requirements.txt`, then run `hy harvest_check.hy`
 
-Checks all days in the previous week in harvest, and sends an email if you haven't logged enough hours on any day.
+Checks all days in the previous week in harvest, and sends a slack message if you haven't logged enough hours on any day.
 
-To use, you need to setup a [mailgun](http://www.mailgun.com/) account, and create a `config.py` file with these fields:
+The following must be present in `config.hy`:
 
-| Field | Description |
+| Var   | Description |
 | ----- | ----------- |
-| min_hours | The minimum acceptable amount of hours logged in a day |
-| email | The address to send the warning email to |
-| harvest_url | The url for harvest |
-| mailgun_secret_key | The secret key for mailgun |
-| mailgun_public_key | The public key for mailgun |
-| mailgun_domain | The domain for mailgun |
-| harvest_user | Username/email for harvest |
-| harvest_password | Password for harvest |
+| harvest-config | A map containing the `:url`, `:email`, and `:password` keys |
+| slack-config   | A map containing the `:token` (slack app oauth token) and `:user-id` (slack user _id_, not name) keys |
 
 ### update-lodash-imports.clj
 
