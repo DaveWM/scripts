@@ -1,3 +1,5 @@
+#! /usr/bin/hy
+
 (import harvest datetime [config [harvest-config slack-config]] [slacker [Slacker]])
 
 (def min-hours 5)
